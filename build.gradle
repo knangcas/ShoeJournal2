@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id "checkstyle"
 }
 
 group = 'org.example'
@@ -21,9 +22,31 @@ jar {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'com.mysql:mysql-connector-j:8.3.0'
+
 }
 
 test {
     useJUnitPlatform()
 }
 
+apply plugin: 'checkstyle'
+checkstyle {
+    // Keep checkstyle a little quieter
+    ignoreFailures = true
+    showViolations = false }
+
+tasks.withType(Checkstyle) {
+
+    reports {
+        html.required = true
+        xml.required = false
+    }
+    include '**/*.java'
+
+
+}
+
+checkstyle {
+    toolVersion = "8.8"
+}
