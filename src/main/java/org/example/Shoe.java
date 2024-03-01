@@ -43,6 +43,51 @@ public class Shoe {
 
     }
 
+    public int getYear() {
+        return year;
+    }
+    public int getShoeID() {
+        return shoeID;
+    }
 
+    public int getYearPurchased() {
+        return yearPurchased;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getStyle() {
+        return style;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public String getColorway() {
+        return colorway;
+    }
+
+    public String getPrimaryColor() {
+        return primaryColor;
+    }
+
+    public String getSecondaryColor() {
+        return secondaryColor;
+    }
+
+    public boolean getOwnership() {
+        return ownership;
+    }
+
+    public String getDateSold() {
+        return dateSold;
+    }
 
 }
