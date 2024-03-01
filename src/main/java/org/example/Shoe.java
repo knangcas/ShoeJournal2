@@ -27,5 +27,22 @@ public class Shoe {
     private String dateSold;
 
 
+    public Shoe(int year, int shoeID, int yearPurchased, String make, String model, String style, int size, String colorway, String primaryColor, String secondaryColor, boolean ownership, String dateSold) {
+        this.year = year;
+        this.shoeID = shoeID;
+        this.yearPurchased = yearPurchased;
+        this.make = make;
+        this.model = model;
+        this.style = style;
+        this.size = size;
+        this.colorway = colorway;
+        this.primaryColor = primaryColor;
+        this.secondaryColor = secondaryColor;
+        this.ownership = ownership;
+        this.dateSold = dateSold;
+
+    }
+
+
 
 }

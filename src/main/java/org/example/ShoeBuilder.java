@@ -87,6 +87,9 @@ ShoeBuilder setDateSold(String s) {
     return this;
 }
 
+Shoe build() {
+  return new Shoe(year, shoeID, yearPurchased, make, model, style, size, colorway, primaryColor, secondaryColor, ownership, dateSold);
+}
 
 
 }
