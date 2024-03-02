@@ -22,7 +22,27 @@ public class Insert {
 
         make = s.next();
 
-        System.out.println("");
+        System.out.println("What is the shoe model?");
+
+        model = s.next();
+
+        System.out.println("What year did the shoe release?");
+
+        while (!s.hasNextInt()) {
+            System.out.println("Please type in a year. Format example: 2020");
+            s.next();
+        }
+        year = s.nextInt();
+
+        System.out.println("What year did you purchase this shoe?");
+
+        while (!s.hasNextInt()){
+            System.out.println("Please type in a year. Format example: 2020");
+            s.next();
+        }
+        yearPurchased = s.nextInt();
+
+
 
 
     }
