@@ -15,8 +15,8 @@ public class Insert {
 
     public void insertShoe() {
         ShoeBuilder shoeBuilder = new ShoeBuilder();
-        int year, shoeID, yearPurchased, size;
-        String make, model, style, colorway, primaryColor, secondaryColor, dateSold;
+        int year, shoeID, yearPurchased, size, style;
+        String make, model, colorway, primaryColor, secondaryColor, dateSold;
 
         System.out.println("What is the shoe brand?");
 
@@ -41,6 +41,19 @@ public class Insert {
             s.next();
         }
         yearPurchased = s.nextInt();
+
+        System.out.println("What is the style? Enter a number.\n"
+                + "1. Casual.\n"
+                + "2. Basketball.\n"
+                + "3. Running.\n"
+                + "4. Other.");
+
+        while(!s.hasNextInt()) {
+            System.out.println("Please type a number.");
+            s.next();
+        }
+
+        style = s.nextInt();
 
 
 
