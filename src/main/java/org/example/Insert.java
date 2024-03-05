@@ -15,8 +15,8 @@ public class Insert {
 
     public void insertShoe() {
         ShoeBuilder shoeBuilder = new ShoeBuilder();
-        int year, shoeID, yearPurchased, size, style;
-        String make, model, colorway, primaryColor, secondaryColor, dateSold;
+        int year, shoeID, yearPurchased, size, style, primaryColor, secondaryColor;
+        String make, model, colorway, dateSold;
 
         System.out.println("What is the shoe brand?");
 
@@ -55,8 +55,78 @@ public class Insert {
 
         style = s.nextInt();
 
+        System.out.println("What is the shoe size (US)?");
+
+        while(!s.hasNextInt()) {
+            System.out.println("Please type a number.");
+            s.next();
+        }
+
+        size = s.nextInt();
+
+        System.out.println("What is the name of the colorway?");
+
+        colorway = s.next();
+
+        System.out.println("What is the primary color?");
+        System.out.println(
+                "0. Black\n"
+                + "1. White\n"
+                + "2. Grey\n"
+                + "3. Red\n"
+                + "4. Green\n"
+                + "5. Blue\n"
+                + "6. Yellow\n"
+                + "7. Brown\n"
+                + "8. Orange\n"
+                + "9. Purple\n"
+                + "10. Gold\n"
+                + "11. Silver\n"
+                + "12. Multi-Color"
+        );
+
+        while(!s.hasNextInt()) {
+            System.out.println("Please type a number.");
+            s.next();
+        }
+
+        primaryColor = s.nextInt();
+
+        System.out.println("What is the secondary color?");
+        System.out.println(
+                "0. Black\n"
+                        + "1. White\n"
+                        + "2. Grey\n"
+                        + "3. Red\n"
+                        + "4. Green\n"
+                        + "5. Blue\n"
+                        + "6. Yellow\n"
+                        + "7. Brown\n"
+                        + "8. Orange\n"
+                        + "9. Purple\n"
+                        + "10. Gold\n"
+                        + "11. Silver\n"
+                        + "12. Multi-Color"
+        );
+
+        while(!s.hasNextInt()) {
+            System.out.println("Please type a number.");
+            s.next();
+        }
+
+        secondaryColor = s.nextInt();
 
 
+
+        System.out.println("Do you currently own this shoe?"
+                + "Type 1 for YES, type 2 for NO.");
+
+        while(!s.hasNextInt()) {
+            System.out.println("Please type a number.");
+            s.next();
+        }
+
+        size = s.nextInt();
 
     }
 
