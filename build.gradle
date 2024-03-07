@@ -4,6 +4,10 @@ plugins {
     id "checkstyle"
 }
 
+run {
+    standardInput = System.in
+}
+
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 

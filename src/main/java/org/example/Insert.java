@@ -121,7 +121,7 @@ public class Insert {
 
         secondaryColor = -1;
 
-        while(primaryColor <0 || primaryColor > 12) {
+        while(secondaryColor <0 || secondaryColor > 12) {
 
             System.out.println("What is the secondary color?");
             System.out.println(
@@ -165,6 +165,10 @@ public class Insert {
         }
 
         size = s.nextInt();
+
+        //Shoe shoeToInsert = shoeBuilder.setYear(year).setColorway(colorway);
+
+
 
     }
 
